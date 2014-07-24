@@ -86,8 +86,8 @@ for (i in 1:10){
 }
 ```
 
-The estimated out of sample error by cross validation is:
-```{r,echo=FALSE}
+The estimated out of sample error by cross validation is as following, it is calculted by all predictions on all folds of data.
+```{r}
   Err = totalErr/nrow(training)
   print(Err)
 ```
