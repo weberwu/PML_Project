@@ -314,6 +314,8 @@ for (i in 1:10){
 ##   E   0   0   0   0 358
 ## [1] 0.9949</code></pre>
 <p>The estimated out of sample error by cross validation is:</p>
+<pre class="r"><code>  Err = totalErr/nrow(training)
+  print(Err)</code></pre>
 <pre><code>## [1] 0.9914</code></pre>
 <p>Finally, we can make prediction on the testing data. follow the procedure above, we rerun the same steps on the whole training data and make predictions on the testing data. The predicted labels for the testing instances are as following:</p>
 <pre><code>##  [1] B A B A A E D B A A B C B A E E A B B B
